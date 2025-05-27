@@ -1,0 +1,9 @@
+
+.imagem-sobreposta {
+    width: 700px;
+    height: 700px;
+    background-image: url(homem-com-laptop-apresentando-algo.png), url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
