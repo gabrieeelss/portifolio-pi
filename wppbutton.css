@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagem com botão do WhatsApp</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px; /* ajuste conforme necessário */
+    }
+
+    .imagem {
+      width: 100%;
+      display: block;
+    }
+
+    .botao-whatsapp {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .botao-whatsapp:hover {
+      background-color: #1ebe5b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="sua-imagem.jpg" alt="Imagem de fundo" class="imagem">
+
+    <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-whatsapp">
+      📞 WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>

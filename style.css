@@ -1,9 +1,213 @@
 
 .imagem-sobreposta {
-    width: 700px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     background-image: url(homem-com-laptop-apresentando-algo.png), url();
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .whatsapp-float img {
+    width: 100px;
+    height: 100px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+  }
+  
+  .social-icons img:hover {
+    filter: brightness(0.8) invert(0);
+    transform: scale(2.0);
+  }
+  .contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px 40px;
+    gap: 60px;
+  }
+  
+  .imagem-sobreposta img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .formulario-contato {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+  }
+  
+  .formulario-contato input,
+  .formulario-contato textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .formulario-contato button {
+    background-color: #0c6ae4;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .formulario-contato button:hover {
+    background-color: #084fc0;
+  }
+  /* Fundo de tela cheio */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  background-image: url('seu-background.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Container horizontal */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+/* Imagem */
+.hero-image {
+  flex: 1;
+  
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.hero-text {
+  flex: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1e40af;
+  transform: scale(2.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero-text, .hero-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000000;
+}
+p {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.neon {
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+}
