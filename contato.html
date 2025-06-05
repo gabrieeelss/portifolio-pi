@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Simplício | Desenvolvedor Web</title>
-    <link rel="icon" type="image/x-icon" href="gslogo.jpg">
+    <link rel="icon" type="image/x-icon" href="img/glogo.jpg">
+        <!--ASB - Accessibility Settings Bar-->
+        <link rel="stylesheet" href="src/icons/fontawesome5.9.0/css/all.css" />
+        <link rel="stylesheet" href="src/css/default.css" />
+        <link rel="stylesheet" href="src/css/asb.css" />
 </head>
 <body>
 
@@ -17,7 +21,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-image: url("abstract-technology-geometric-pattern-vector.jpg");
+      background-image: url("img/abstract-technology-geometric-pattern-vector.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
@@ -91,7 +95,7 @@
   <header>
     <div class="logo">
         <a href="index.html">
-      <img src="white_text_image.png" alt="Gabriel Simplício">
+      <img src="img/white_text_image.png" alt="Gabriel Simplício">
     </a>
     </div>
     <div class="social-icons">
@@ -131,14 +135,22 @@
 
     </div>
     
-    <form class="formulario-contato">
+    <form class="formulario-contato" action="https://formsubmit.co/gabrieeel.08@gmail.com" method="POST">
       <h2>FALE COMIGO:</h2>
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu email" required>
       <input type="tel" placeholder="Seu Telefone" required>
       <textarea placeholder="Sua mensagem" rows="5" required></textarea>
       <button type="submit">Enviar</button>
+
+        <!-- Campos opcionais de segurança -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="/obrigado.html">
     </form>
   </div>
+  <!--ASB - Accessibility Settings Bar-->
+  <script type="text/javascript" src="src/js/asb.js"></script>
+    <!-- Opcional se quiser extender o suporte a browsers mais antigos -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </body>
 </html>

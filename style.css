@@ -1,8 +1,8 @@
 
 .imagem-sobreposta {
-    width: 800px;
-    height: 800px;
-    background-image: url(homem-com-laptop-apresentando-algo.png), url();
+    width: 700px;
+    height: 700px;
+    background-image: url(img/homem-com-laptop-apresentando-algo.png), url();
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body, html {
 .hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 60px;
   width: 100%;
   max-width: 1400px;
@@ -160,7 +160,7 @@ body, html {
   font-size: 1rem;
   border-radius: 12px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .cta-button:hover {
@@ -211,3 +211,90 @@ p {
     0 0 20px #0ff,
     0 0 40px #0ff;
 }
+.neon2 {
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(37, 76, 206),
+    0 0 40px #0ff;
+}
+
+/*ESTAVA NA INDEX*/
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("img/abstract-technology-geometric-pattern-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 15px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #111;
+    }
+
+    .cta {
+      background-color: #0c6ae4;
+      color: #111;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+    }
+  

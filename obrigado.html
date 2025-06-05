@@ -4,19 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Simplício | Desenvolvedor Web</title>
-    <link rel="icon" type="image/x-icon" href="img/gslogo.jpg">
-    <!--ASB - Accessibility Settings Bar-->
-    <link rel="stylesheet" href="src/icons/fontawesome5.9.0/css/all.css" />
-    <link rel="stylesheet" href="src/css/default.css" />
-    <link rel="stylesheet" href="src/css/asb.css" />
-    </head>
-
+    <link rel="icon" type="image/x-icon" href="glogo.jpg">
+</head>
 <body>
-<link rel="stylesheet" href="style.css">
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("abstract-technology-geometric-pattern-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 15px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #111;
+    }
+
+    .cta {
+      background-color: #0c6ae4;
+      color: #111;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
   <header>
     <div class="logo">
         <a href="index.html">
-      <img src="img/white_text_image.png" alt="Gabriel Simplício">
+      <img src="white_text_image.png" alt="Gabriel Simplício">
     </a>
     </div>
     <div class="social-icons">
@@ -45,28 +120,23 @@
   
 
   <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
   </a>
   <section class="hero">
     <div class="hero-content">
       <!-- Imagem à esquerda -->
       <div class="hero-image">
-        <img src="img/homem-com-laptop-apresentando-algo.png" alt="Imagem ilustrativa"/>
+        <img src="homem-com-laptop-apresentando-algo.png" alt="Imagem ilustrativa"/>
       </div>
 
       <!-- Texto à direita -->
       <div class="hero-text">
-        <h1 class="neon">Seu site profissional começa aqui</h1>
+        <h1 class="neon2">Obrigado pelo contato!</h1>
         <p style="font-style: italic;">
-          Está procurando um site que traga resultados de verdade? Eu desenvolvo sites sob medida com foco em performance, estética e conversão. Seja para apresentar seu negócio, vender produtos ou atrair mais clientes, posso te ajudar a sair do zero ou melhorar o que você já tem.
+           <b> Recebemos sua mensagem e responderemos em breve.</b>
         </p>
-        <a href="contato.html" class="cta-button hover"> <b>SOLICITAR ORÇAMENTO GRATUITO</b></a>
       </div>
     </div>
   </section>
-    <!--ASB - Accessibility Settings Bar-->
-    <script type="text/javascript" src="src/js/asb.js"></script>
-    <!-- Opcional se quiser extender o suporte a browsers mais antigos -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </body>
 </html>
