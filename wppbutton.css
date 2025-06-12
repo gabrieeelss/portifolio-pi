@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Imagem com botão do WhatsApp</title>
-  <style>
     .container {
       position: relative;
       width: 300px; /* ajuste conforme necessário */
@@ -34,17 +28,3 @@
     .botao-whatsapp:hover {
       background-color: #1ebe5b;
     }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <img src="sua-imagem.jpg" alt="Imagem de fundo" class="imagem">
-
-    <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-whatsapp">
-      📞 WhatsApp
-    </a>
-  </div>
-
-</body>
-</html>
